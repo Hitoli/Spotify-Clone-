@@ -1,0 +1,636 @@
+/*everything*/
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    
+}
+.container{
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+:root {
+    --primary: #FFCE00;
+    --secondary: #FE4880;
+    --dark: #212121;
+    --light: #F3F3F3;
+  }
+
+/*Body*/
+
+/*Navigation*/
+nav.navbar{
+    background-color: black;
+    padding-bottom: .5rem;
+}
+
+.navbar-brand{
+    display: flex;
+    width: auto;
+    height: 55px;
+    margin-right:5rem;
+}
+.logo{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.24rem;
+}
+.nav-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-li{
+    display: inline-block;
+    margin: 0rem .5rem;
+    text-decoration: none;
+    
+}
+.navigation-all{
+    padding: .5rem;
+}
+.color-me{
+    color:rgb(247, 238, 255)!important;
+    padding:0rem 1rem;
+    font-size: 1.2rem;
+}
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 120px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    z-index: -2;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+/*Navigation-end*/
+/*Home*/
+.home{
+    background: #3C3B3F,url("banner background.jpg");  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #605C3C22, #3C3B3F22),url("banner background.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #605C3C22, #3C3B3F22),url("banner background.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding-bottom: 22rem;
+}
+.green-heading{
+    color: #1DB954;
+}
+.half-green-heading{
+    background: linear-gradient(130deg,#ffffff 50%, #1DB954 50%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.banner{
+    
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.banner-heading{
+    background:linear-gradient(to right, #ccc 50%, #1DB954 50%) bottom,
+    linear-gradient(to right, #1DB954 50%, #ccc 50%) top;
+  background-repeat: no-repeat;
+  background-size:100% 2px;
+    font-size: 8rem;
+    color: whitesmoke;
+    overflow-y: hidden;
+    text-align: center;
+}
+.banner-para{
+    color: white;
+    padding: 1rem .5rem;
+    font-size: 2rem;
+}
+.discover-banner-btn{   
+    margin: .5rem;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #1DB954;
+    border: none;
+    transition: .7s ease;
+}
+
+.discover-banner-btn:hover{
+    
+    background: whitesmoke;
+    color: black;
+}
+
+
+
+/*Home-End*/
+/*banner-2*/
+.body-text{
+    display: block;
+    text-align: center;
+}
+.qoute{
+    margin: 2rem;
+    padding: 2rem;;
+    font-size: 7rem;
+}
+.green-qoute-music{
+    background: linear-gradient(10deg,#000000 50%, #1DB954 50%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+.green-qoute-outburst{
+    background: linear-gradient(175deg,#000000 50%, #1DB954 50%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.green-qoute-soul{
+    background: linear-gradient(-130deg,#000000 50%, #1DB954 50%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.qoute-author{
+    background: linear-gradient(140deg,#3C3B3F 50% , #1DB954 50%)bottom;
+    background-repeat:no-repeat;
+    background-size: 5% 4px;
+    font-size: 1.5rem;
+}
+.hero{
+    margin: 5rem .5rem;
+}
+.hero-premium{
+    margin: 1.5rem 0rem;
+}
+.premium{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    margin: 1rem;
+    
+}
+.premium-for-users{
+    background: linear-gradient(140deg,#3C3B3F 50% , #1DB954 50%)bottom;
+    background-repeat:no-repeat;
+    background-size: 30% 4px;
+    overflow-y: hidden;
+    padding-bottom: 1rem;
+}
+.premium-for-artists{
+    background: linear-gradient(140deg,#3C3B3F 50% , #1DB954 50%)bottom;
+    background-repeat:no-repeat;
+    background-size: 30% 4px;
+    overflow-y: hidden;
+    padding-bottom: 1rem;
+}
+.premium-para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.premium-img{
+    border-radius: 200px;
+    margin: 0rem 2rem;
+
+}
+.premium-2-para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.premium-2-img{
+    border-radius: 200px;
+    margin: 0rem 2rem;
+}
+.premium-2{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    margin: 1rem;
+}
+/*banner-2-end*/
+/*Artist-section*/
+.artist-section{
+    display: grid;
+    grid-template-columns:50% 50%;
+
+}
+.artist-intro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.artist-pics{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-auto-rows: 20rem;
+    gap: 1rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+.pics{
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+}
+.artist-grid-col-2{
+    grid-column:span 2 ;
+}
+.artist{
+    
+    background-image:linear-gradient(110deg, #161616aa 60%, #16191aff 40%), url("background.jpg");
+    padding: 4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.Artist-on-rise{
+    font-size: 5rem;
+    color: whitesmoke;
+    padding: 1rem;
+    font-weight: 900;
+}
+.discover-artists{
+    color: whitesmoke;
+    padding: 1rem;
+    font-weight: 300;
+}
+button.btn-discover{
+    padding: .5rem 1.5rem;
+    border-radius: 12px;
+    border: none;
+    margin: 1rem;
+    background-color: #1DB954;
+    align-self: center;
+    transition: .7s ease-in;
+}
+.btn-discover:hover{
+    background: whitesmoke;
+    color: black;
+}
+
+
+/*Artist-section-end*/
+/*Songs-playing-section*/
+
+.playing{
+    background: linear-gradient(140deg,#1DB954 50% , #3f0000e0 50%)bottom;
+    background-repeat:no-repeat;
+    background-size: 70% 4px;
+    font-size: 5rem;
+    color: black;
+    padding: 1rem;
+    font-weight: 900;
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.playing-area{
+   background: black;
+   padding:1.5rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+
+}
+.play-area{
+    background: #3f0000e0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #190A05, #3f0000e0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #190A05, #3f0000e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 1.5rem;
+    margin: .5rem;
+    display: flex;
+   align-items: stretch;
+    
+
+}
+.song-cover{
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.music{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex: 2;
+    align-self: center;
+    padding-right: 5rem;    
+    color: whitesmoke;
+    font-size: 1.5rem;
+    
+}
+.singer-name{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.about-song{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+.controls{
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    width: 9%;
+    margin: .5rem 1.5rem;        
+    height: auto;
+}
+.music-btn{
+    margin:3px;
+}
+/*Songs-playing-section-end*/
+/*Card*/
+.cards{
+    margin: 100px auto 0;
+    width: 400px;
+    height: 600px;
+    perspective: 1000px;
+}
+.c-face-front{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+.c-face-front .flipped{
+    transform: rotateY(180deg);
+}
+.face-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0,0,0,0.2);
+}
+.card-face-front{
+    background-color: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-face-back {
+    background-color: var(--light);
+    transform: rotateY(180deg);
+  }
+  .card-content{
+      width: 100%;
+      height: 100%;
+  }
+  .card-header {
+    position: relative;
+    padding: 30px 30px 40px;
+  }
+  
+  .card-header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+    z-index: -1;
+    border-radius: 0px 0px 50% 0px;
+  }
+
+/*Card-end*/
+/*Footer*/
+.footer{
+    background: #000000;
+    padding-bottom: 8rem;
+
+    
+}
+.footersection{
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    
+    
+}.footer-logo-icon{
+    width: auto;
+    height: 100%;
+}
+.footer-logo{
+    font-size: 2rem;
+}
+.logo-footer{
+    display: flex;
+    color: whitesmoke;
+    align-items: center;
+}
+.link{
+    padding: 1rem;
+}
+.links{
+    padding: 1rem 0rem;
+    color: whitesmoke;
+}
+.homee{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.shope{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.premiume{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.instagram{
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+.facebook{
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+.twitter{
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+.footer-artist-icon{
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+.footer-users-icon{
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem;
+    
+    
+}
+.footer-socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.footer-artists{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem;
+    
+}
+.footer-users{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: whitesmoke;
+    padding: 2rem;
+}
+.imp-links{
+    color: whitesmoke;
+
+}
+.legal{
+    color: whitesmoke;
+    padding-right: 1rem;
+
+}
+.location{
+    padding: .5rem;
+}
+/*Footer-end*/
+/*Terms and conditions*/
+.termandcondition{
+    
+    background: gray;
+    padding: 1rem 0rem;
+
+}
+/*Terms and conditons-end*/
+/*Songs-pop-up*/
+/*
+
+.pop-holder{
+    position: fixed;
+    height: 100%;  
+    width: 100%;  
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 1rem;
+    width: 30%;
+    height: 120px;
+    border-radius: 12px;
+    overflow-y: hidden;
+    background: #0f0000e0;  /* fallback for old browsers 
+    background: -webkit-linear-gradient(to right, #190A05, #0f0000e0);  /* Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to right, #190A05, #0f0000e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+}
+.pop-up{
+    position: fixed;
+    left: 0.5%;
+    width: 40%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:flex-start;
+    
+
+}
+.placeholder-img{
+    margin: 1rem; 
+    width: 17%;
+    height: auto;
+    overflow-y: hidden;
+}
+.music-popup{
+    color: whitesmoke;
+    display: flex;
+    flex: 2;
+    padding: .5rem 0rem;
+    flex-direction: column;
+    align-items: flex-start;  
+}
+.music-popup.singer-name-popup{
+    display: flex;
+    align-self: flex-start;
+    margin: .5rem;
+
+}
+.bar{
+    background-color: #24242424;
+    width: 31.5%;
+    height: 135px;
+    position: absolute;
+    overflow: hidden;
+    bottom: 8px;
+    left: 5px;
+    border-radius: 15px;
+    z-index: -2;
+}
+#progresss{
+    
+    display: block;
+    width: var(--pogress,0%);
+    background-color: white;
+    transition: all 1s linear;
+    height: 100%;
+}
+#play{
+    width: 40%;
+       
+}
+
+*/
+/*Songs-pop-up-end*/
